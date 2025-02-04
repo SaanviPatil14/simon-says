@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+
+.box{
+    transform: translate(-50%,-50%);
+    left:50%;
+    top: 50%;
+}
+
+/*button*/
+.start{
+    transform: translate(-50%,-50%);
+    left:50%;
+    top: 50%;
+    z-index: 2;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.show{
+    visibility: visible;
+}
+
+.color1{
+    background-color: #068e06;
+}
+
+.color2{
+    background-color: #950303;
+}
+
+.color3{
+    background-color: #919102;
+}
+
+.color4{
+    background-color: #01018a;
+}
