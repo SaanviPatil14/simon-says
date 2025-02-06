@@ -7,22 +7,22 @@
     <link href="output.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
-<body class="bg-zinc-700 items-center">
-    <div class="start absolute">
-        <button class="bg-white text-zinc-700 rounded-lg h-9 text-center w-28 text-lg font-semibold">Start Game</button>
-    </div>
+<body class="bg-slate-700 items-center">
 
-    <div class="absolute box hide">
-    <div class="items-center flex w-96 flex-wrap justify-center left-52">
-        <div class="w-40 h-40 mx-2 my-2 rounded-tl-full color1"></div>
-        <div class="w-40 h-40 mx-2 my-2 rounded-tr-full color2"></div>
-        <div class="w-40 h-40 mx-2 my-2 rounded-bl-full color3"></div>
-        <div class="w-40 h-40 mx-2 my-2 rounded-br-full color4"></div>
+    <div class="container text-center">
+        <div class="show">
+            <div><h1>Simon Game</h1></div>
+            <button id="start-btn" class="py-2.5 px-5 bg-amber-50">Start Game</button>
+            <div class="game-status text-2xl mt-5" id="status">Press Start to play!</div>
+        </div>
+        <div class="button-container absolute flex flex-wrap w-96 items-center">
+            <div id="green" class="color-btn green rounded-tl-full w-44 h-44 cursor-pointer mx-1 my-1"></div>
+            <div id="red" class="color-btn red rounded-tr-full w-44 h-44 cursor-pointer mx-1 my-1"></div>
+            <div id="yellow" class="color-btn yellow rounded-bl-full w-44 h-44 cursor-pointer mx-1 my-1"></div>
+            <div id="blue" class="color-btn blue rounded-br-full w-44 h-44 cursor-pointer mx-1 my-1"></div>
+        </div>
     </div>
-    <div class="w-32 h-32 bg-black translate-z-1 top-28 left-32 absolute rounded-full text-center text-white py-10 text-3xl" id="countValue">
-        0
-    </div>
-</div>
-<script src="javascript.js"></script>
+    
+    <script src="javascript.js"></script>
 </body>
 </html>
